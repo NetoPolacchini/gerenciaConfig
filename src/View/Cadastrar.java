@@ -39,85 +39,58 @@ public class Cadastrar extends javax.swing.JFrame {
         textFieldMarca = new javax.swing.JTextField();
         textFieldModelo = new javax.swing.JTextField();
         textFieldAno = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cadastro");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        buttonCadastrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         buttonCadastrar.setText("Cadastrar");
         buttonCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonCadastrarActionPerformed(evt);
             }
         });
+        getContentPane().add(buttonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
 
+        buttonVoltar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         buttonVoltar.setText("Voltar");
         buttonVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonVoltarActionPerformed(evt);
             }
         });
+        getContentPane().add(buttonVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, -1, -1));
 
+        labelMarca.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         labelMarca.setText("Marca:");
+        getContentPane().add(labelMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, 20));
 
+        labelModelo.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         labelModelo.setText("Modelo:");
+        getContentPane().add(labelModelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, 20));
 
+        labelCor.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         labelCor.setText("Cor:");
+        getContentPane().add(labelCor, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, 20));
 
+        labelAno.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         labelAno.setText("Ano:");
+        getContentPane().add(labelAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, 20));
+        getContentPane().add(textFieldCor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 180, -1));
+        getContentPane().add(textFieldMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 180, -1));
+        getContentPane().add(textFieldModelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 180, -1));
+        getContentPane().add(textFieldAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 180, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(146, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(buttonCadastrar)
-                        .addGap(174, 174, 174))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(buttonVoltar)
-                        .addGap(25, 25, 25))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelModelo)
-                    .addComponent(labelCor)
-                    .addComponent(labelAno)
-                    .addComponent(labelMarca))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(textFieldMarca, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-                    .addComponent(textFieldModelo)
-                    .addComponent(textFieldCor)
-                    .addComponent(textFieldAno))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelMarca)
-                    .addComponent(textFieldMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelModelo)
-                    .addComponent(textFieldModelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelCor)
-                    .addComponent(textFieldCor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelAno)
-                    .addComponent(textFieldAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                .addComponent(buttonCadastrar)
-                .addGap(2, 2, 2)
-                .addComponent(buttonVoltar)
-                .addGap(26, 26, 26))
-        );
+        jLabel2.setFont(new java.awt.Font("Candara", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Cadastro de Veículos");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 180, 46));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagem/carr.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -144,11 +117,11 @@ public class Cadastrar extends javax.swing.JFrame {
 
             if (sucesso == true) {
 
-                JOptionPane.showMessageDialog(null, "Animal cadastrado com sucesso");
+                JOptionPane.showMessageDialog(null, "Carro cadastrado com sucesso");
             } else if (marca.length() <= 0 || cor.length() <= 0 || modelo.length() <= 0) {
                 JOptionPane.showMessageDialog(null, "Preencha todos os campos");
             } else {
-                JOptionPane.showMessageDialog(null, "Erro ao cadastrar Animal");
+                JOptionPane.showMessageDialog(null, "Erro ao cadastrar carro");
             }
         } catch (ExceptionDAO | HeadlessException | NumberFormatException ex) {
             JOptionPane.showMessageDialog(null, "error" + ex);
@@ -193,6 +166,8 @@ public class Cadastrar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonCadastrar;
     private javax.swing.JButton buttonVoltar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel labelAno;
     private javax.swing.JLabel labelCor;
     private javax.swing.JLabel labelMarca;
