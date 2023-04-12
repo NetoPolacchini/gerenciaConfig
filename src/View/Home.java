@@ -45,7 +45,7 @@ public class Home extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, -1));
 
         buttonVisualizar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        buttonVisualizar.setText("Ver Veículos");
+        buttonVisualizar.setText("Visualizar veículos");
         buttonVisualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonVisualizarActionPerformed(evt);
