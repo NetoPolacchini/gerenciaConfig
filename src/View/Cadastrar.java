@@ -102,6 +102,7 @@ public class Cadastrar extends javax.swing.JFrame {
 
     private void buttonCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCadastrarActionPerformed
         CadastrarVeiculo();
+        limpa();
     }//GEN-LAST:event_buttonCadastrarActionPerformed
 
     public void CadastrarVeiculo() {
@@ -126,6 +127,13 @@ public class Cadastrar extends javax.swing.JFrame {
         } catch (ExceptionDAO | HeadlessException | NumberFormatException ex) {
             JOptionPane.showMessageDialog(null, "error" + ex);
         }
+    }
+    
+    public void limpa(){
+        textFieldMarca.setText("");
+        textFieldModelo.setText("");
+        textFieldCor.setText("");
+        textFieldAno.setText("");
     }
     
     /**
