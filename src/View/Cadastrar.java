@@ -46,7 +46,9 @@ public class Cadastrar extends javax.swing.JFrame {
         setTitle("Cadastro");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        buttonCadastrar.setBackground(new java.awt.Color(204, 0, 0));
         buttonCadastrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buttonCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         buttonCadastrar.setText("Cadastrar");
         buttonCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,14 +57,16 @@ public class Cadastrar extends javax.swing.JFrame {
         });
         getContentPane().add(buttonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
 
+        buttonVoltar.setBackground(new java.awt.Color(204, 0, 0));
         buttonVoltar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buttonVoltar.setForeground(new java.awt.Color(255, 255, 255));
         buttonVoltar.setText("Voltar");
         buttonVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonVoltarActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, -1, -1));
+        getContentPane().add(buttonVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 240, 80, -1));
 
         labelMarca.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         labelMarca.setText("Marca:");
@@ -84,10 +88,10 @@ public class Cadastrar extends javax.swing.JFrame {
         getContentPane().add(textFieldModelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 180, -1));
         getContentPane().add(textFieldAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 180, -1));
 
-        jLabel2.setFont(new java.awt.Font("Candara", 1, 20)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Candara", 1, 23)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Cadastro de Veículos");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 180, 46));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 210, 46));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagem/carr.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));

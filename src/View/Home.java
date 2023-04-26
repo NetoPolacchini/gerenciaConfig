@@ -36,34 +36,37 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Home");
-        setBackground(new java.awt.Color(204, 204, 255));
+        setBackground(new java.awt.Color(0, 0, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Candara", 1, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Candara", 1, 35)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Bem Vindo");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, -1));
+        jLabel1.setText("Bem Vindo!");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, -1, -1));
 
         buttonVisualizar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        buttonVisualizar.setText("Visualizar veículos");
+        buttonVisualizar.setText("Ver Veículos");
         buttonVisualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonVisualizarActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonVisualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 214, 225, -1));
+        getContentPane().add(buttonVisualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 200, -1));
 
+        buttonCadastrar.setBackground(new java.awt.Color(204, 0, 0));
         buttonCadastrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buttonCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         buttonCadastrar.setText("Cadastrar Veículos");
         buttonCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonCadastrarActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 158, 225, -1));
+        getContentPane().add(buttonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 200, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagem/carr.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

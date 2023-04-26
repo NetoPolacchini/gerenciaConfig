@@ -43,17 +43,26 @@ public class Visualizar extends javax.swing.JFrame {
                 buttonVoltarActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
+        getContentPane().add(buttonVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 90, -1));
 
+        jTable2.setAutoCreateRowSorter(true);
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null}
             },
             new String [] {
-                "ID", "Marca", "Modelo", "Cor", "Ano"
+                "ID", "MARCA", "MODELO", "COR", "ANO"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -62,6 +71,11 @@ public class Visualizar extends javax.swing.JFrame {
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
+            }
+        });
+        jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable2MouseClicked(evt);
             }
         });
         jScrollPane2.setViewportView(jTable2);
@@ -78,6 +92,10 @@ public class Visualizar extends javax.swing.JFrame {
         this.dispose();
         new Home().setVisible(true);
     }//GEN-LAST:event_buttonVoltarActionPerformed
+
+    private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable2MouseClicked
 
     /**
      * @param args the command line arguments
