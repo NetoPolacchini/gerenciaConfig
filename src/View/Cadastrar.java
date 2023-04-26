@@ -121,6 +121,8 @@ public class Cadastrar extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Carro cadastrado com sucesso");
             } else if (marca.length() <= 0 || cor.length() <= 0 || modelo.length() <= 0) {
                 JOptionPane.showMessageDialog(null, "Preencha todos os campos");
+            } else if(ano <= 9999 && ano >= 1000){
+                JOptionPane.showMessageDialog(null, "Ano incompativel");
             } else {
                 JOptionPane.showMessageDialog(null, "Erro ao cadastrar carro");
             }
